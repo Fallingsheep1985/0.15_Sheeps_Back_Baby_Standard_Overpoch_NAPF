@@ -139,7 +139,7 @@ execVM "\z\addons\dayz_server\CustomBuildings\napf\blitz-island.sqf";
 
 // DO NOT CHANGE THIS!!
 //Repack version 
-REPACKMOD = "Epoch NAPF"; 
-BUILDNUMBER = "10";
+REPACKMOD = "Overpoch NAPF"; 
+BUILDNUMBER = "1";
 
 
