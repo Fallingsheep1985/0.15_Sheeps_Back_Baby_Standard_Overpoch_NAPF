@@ -11,7 +11,7 @@ if (dayz_combat == 1) then {
 	_dis=10;
 	_sfx = "repair";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+	[player,_dis,true,(getPosASL player)] spawn player_alertZombies;
 	
 	sleep 6;
 	

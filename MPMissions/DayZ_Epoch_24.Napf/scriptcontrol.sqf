@@ -21,9 +21,9 @@ HordeScript = true;
 //Base jump
 BaseJumpScript = true;
 //AI BUS Route
-BusRouteScript = false; // NO NAPF BUS ROUTE YET
+BusRouteScript = true; 
 //Show marker for AI bus on map
-BUSmarkerScript = false; // NO NAPF BUS ROUTE YET
+BUSmarkerScript = True; 
 //Custom Kill Message's
 KillMessageScript = true;
 //Weapon Mods
@@ -99,7 +99,7 @@ HeroPerkScript = true;
 //Walk amongst the dead
 WalkAmongstDeadScript = true;
 //Rob Bank
-RobBankScript = false; // NO NAPF BANK SET UP YET
+RobBankScript = true; 
 //Service Points
 ServicePointScript = true;
 //Snow
@@ -131,10 +131,38 @@ to turn the map markers on change false to true
 
 */
 if (isServer) then {
-//Insel
-execVM "\z\addons\dayz_server\CustomBuildings\napf\insel.sqf";
+//Sector FNG inland
+[] execVM "\z\addons\dayz_server\CustomBuildings\sectorfng\sectorfng_init.sqf";
+
+//Red Zone
+[] execVM "\z\addons\dayz_server\CustomBuildings\insel.sqf";
+
 //Blitz Island
-execVM "\z\addons\dayz_server\CustomBuildings\napf\blitz-island.sqf";
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\blitz-island.sqf";
+
+//Magden
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\Magden.sqf";
+
+//Napf_small_base
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\Napf_small_base.sqf";
+
+//Blitz Island
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\neisland.sqf";
+
+//aircraftcarrier
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\BSRLHD.sqf";
+
+//BSRbridge
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\Bsrbridge.sqf";
+
+//BSRSEAF
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\Bsrseaf.sqf";
+
+//Feld
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\feldmoos.sqf";
+
+//Bank
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\bank_building.sqf";
 };
 
 // DO NOT CHANGE THIS!!

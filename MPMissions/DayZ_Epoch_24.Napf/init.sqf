@@ -34,8 +34,8 @@ spawnArea= 1500; // Default = 1500
 
 MaxVehicleLimit = 300; // Default = 50
 MaxDynamicDebris = 500; // Default = 100
-dayz_MapArea = 14000; // Default = 10000
-dayz_maxLocalZombies = 30; // Default = 30 
+dayz_MapArea = 25000; // Default = 10000
+dayz_maxLocalZombies = 10; // Default = 30 
 
 dayz_fullMoonNights = true;
 
@@ -66,7 +66,7 @@ DZE_DeathMsgTitleText = true;
 DZE_DeathMsgSide = true;
 DZE_BackpackGuard = false; //Default = true, true to enable, false to disable - wipes backpack on combat/ALT+F4 logging
 DZE_ForceNameTagsOff = false;
-DZE_R3F_WEIGHT = false; //use weight system
+DZE_R3F_WEIGHT = true; //use weight system
 DZE_PlotPole = [100,115];	
 DZE_BuildingLimit = 400;//how many items can a player build
 DZE_PlayerZed = false; // should players have chance of becoming a ZOMBIE when they respawn after death
@@ -105,6 +105,7 @@ ELE_RequiredBuildTools = ["ItemToolbox", "ItemCrowbar"]; // required tools for b
 ELE_RequiredBuildItems = [["PartGeneric",4], "PartEngine", "ItemGenerator", "ItemJerrycan"]; // required items to build an elevator
 ELE_RequiredBuildStopItems = [["PartGeneric",4]]; // required items to build an elevator stop
 ELE_StopClass = "MetalFloor_Preview_DZ";
+
 
 	EpochEvents = [
 	["any","any","any","any",30,"crash_spawner"],
