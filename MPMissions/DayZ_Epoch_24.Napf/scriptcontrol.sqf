@@ -168,6 +168,6 @@ if (isServer) then {
 // DO NOT CHANGE THIS!!
 //Repack version 
 REPACKMOD = "Overpoch NAPF"; 
-BUILDNUMBER = "7";
+BUILDNUMBER = "11";
 
 
