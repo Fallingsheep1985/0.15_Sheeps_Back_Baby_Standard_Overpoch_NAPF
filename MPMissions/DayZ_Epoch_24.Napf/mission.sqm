@@ -45,7 +45,8 @@ class Mission
 		"american_law_enforcement",
 		"CYBP_Camels_Config",
 		"nissan_350z",
-		"ussr_cheytac"
+		"ussr_cheytac",
+		"bb_mercenary"
 	};
 	addOnsAuto[]=
 	{
