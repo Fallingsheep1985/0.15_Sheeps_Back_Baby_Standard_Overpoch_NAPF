@@ -366,7 +366,7 @@ if (true) then
   _this setDir 163.56804;
   _this setPos 14600.1,3003.61,3.0517578e-005];
 };
-
+/*
 _vehicle_70 = objNull;
 if (true) then
 {
@@ -374,7 +374,7 @@ if (true) then
   _vehicle_70 = _this;
   _this setPos [14595.1,3001.61];
 };
-
+*/
 _vehicle_71 = objNull;
 if (true) then
 {
