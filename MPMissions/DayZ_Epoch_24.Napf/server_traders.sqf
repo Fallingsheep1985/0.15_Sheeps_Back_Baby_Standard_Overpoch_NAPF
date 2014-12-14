@@ -1,5 +1,5 @@
 // DayZ Epoch TRADERS for 17
-serverTraders = ["Tanny_PMC","Graves","US_Delta_Force_AR_EP1","GUE_Commander","Damsel3","Soldier_MG_PKM_PMC","GUE_Worker2","GUE_Woodlander2","RUS_Soldier2","Drake_Light","GUE_Woodlander3","Soldier_GL_PMC","GUE_Villager3","CIV_EuroWoman01_EP1","Dr_Annie_Baker_EP1","RUS_Commander","Damsel5","TK_Special_Forces_MG_EP1","TK_Special_Forces_EP1","Ins_Soldier_AR","Ins_Lopotev","Ins_Worker2","Ins_Woodlander3","Dr_Hladik_EP1","pook_Doc_Bell47","Ins_Woodlander2"];
+serverTraders = ["Hooker1","Hooker2","Tanny_PMC","Graves","US_Delta_Force_AR_EP1","GUE_Commander","Damsel3","Soldier_MG_PKM_PMC","GUE_Worker2","GUE_Woodlander2","RUS_Soldier2","Drake_Light","GUE_Woodlander3","Soldier_GL_PMC","GUE_Villager3","CIV_EuroWoman01_EP1","Dr_Annie_Baker_EP1","RUS_Commander","Damsel5","TK_Special_Forces_MG_EP1","TK_Special_Forces_EP1","Ins_Soldier_AR","Ins_Lopotev","Ins_Worker2","Ins_Woodlander3","Dr_Hladik_EP1","pook_Doc_Bell47","Ins_Woodlander2"];
 // Hero Vendor
 menu_Tanny_PMC = [
 	[["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477],["Overwatch Cop Cars",1012],["Overwatch Civilan Cars",1013],["Overwatch Sniper Rifles",1001],["Overwatch HK416",1004],["Overwatch HK417",1002],["Overwatch ACR",1005],["Overwatch AK",1003],["Overwatch G3",1007],["Overwatch LMG",1008],["Overwatch Masada",1009],["Overwatch Pistols",1010],["Overwatch Scar",1011]],
@@ -92,7 +92,7 @@ menu_Dr_Annie_Baker_EP1 = [
 ];
 // North Wholesaler
 menu_RUS_Commander = [
-	[["Wholesale",555]],
+	[["Wholesale",555],["Oil",909]],
 	[],
 	"neutral"
 ];
@@ -104,7 +104,7 @@ menu_Damsel5 = [
 ];
 // West Wholesaler
 menu_TK_Special_Forces_MG_EP1 = [
-	[["Wholesale",636]],
+	[["Wholesale",636],["Oil",909]],
 	[],
 	"neutral"
 ];
@@ -156,4 +156,15 @@ menu_pook_Doc_Bell47 = [
 	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
 	"neutral"
 ];
-
+// Bartender
+menu_Hooker2 = [
+	[["Drinks",633],["Nuts",9002]],
+	[],
+	"neutral"
+];
+// Drug Dealer
+menu_Hooker1 = [
+	[["Drugs",901]],
+	[],
+	"neutral"
+];
