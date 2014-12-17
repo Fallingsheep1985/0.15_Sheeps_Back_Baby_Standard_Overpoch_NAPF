@@ -6,6 +6,8 @@ WaterMarkScript = true; //Watermark on/off
 server_name = "0.15 NAPF"; //Watermark Text
 //Gambling ( Slotmachine, Guessing Game)
 GambleingScript = false; // NO NAPF CASINO YET
+//No Voice Inside chat
+noVoicesidescript = true;
 //Intro Music
 IntroMusicScript = true;
 //Server Logo
@@ -23,7 +25,7 @@ BaseJumpScript = true;
 //AI BUS Route
 BusRouteScript = true; 
 //Show marker for AI bus on map
-BUSmarkerScript = True; 
+BUSmarkerScript = true; 
 //Custom Kill Message's
 KillMessageScript = true;
 //Weapon Mods
@@ -160,6 +162,9 @@ if (isServer) then {
 
 //Feld
 [] ExecVM "\z\addons\dayz_server\CustomBuildings\feldmoos.sqf";
+
+//Oil Rigs
+[] ExecVM "\z\addons\dayz_server\CustomBuildings\oilrig1.sqf";
 
 //Bank
 [] ExecVM "\z\addons\dayz_server\CustomBuildings\bank_building.sqf";
