@@ -22,7 +22,7 @@ dayz_previousID = 0;
 //disable greeting menu 
 player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
-enableRadio true;
+enableRadio false;
 // May prevent "how are you civillian?" messages from NPC
 enableSentences false;
 
@@ -192,7 +192,7 @@ if (!isDedicated) then {
 		execVM "scripts\dzgm\init.sqf";
 	};
 	if (TradeFromVehicleScript) then {
-	[] execVM "scripts\TradeFromVehicle\init.sqf";
+	[] execVM "scripts\TradeFromVehicle Version 2.0\setup\init.sqf";
 	};
 	if (ElevatorScript) then{
 		["elevator"] execVM "scripts\elevator\elevator_init.sqf";
