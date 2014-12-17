@@ -456,10 +456,10 @@ if (true) then
 _vehicle_82 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Notebook", [14614.1,2980.61,1.1120623], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Notebook", [14618.9,3041.97,1.1120623], [], 0, "CAN_COLLIDE"];
   _vehicle_82 = _this;
   _this setDir 163.12364;
-  _this setPos [14614.1,2980.61,1.1120623];
+  _this setPos [14618.9,3041.97,1.1120623];
 };
 
 _vehicle_83 = objNull;

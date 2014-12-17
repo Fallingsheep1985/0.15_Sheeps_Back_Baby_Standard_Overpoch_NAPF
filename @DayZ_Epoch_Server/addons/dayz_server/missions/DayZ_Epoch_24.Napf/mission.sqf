@@ -2637,5 +2637,14 @@ if (true) then
   _this setPos [15506.942, 13213.153, 0.27172163];
 };
 
+_unit_265 = objNull;
+if (true) then
+{
+  _this = createAgent ["Drake_Light", [18311.3,2289.75,0.0821533], [], 0, "CAN_COLLIDE"];
+  _unit_245 = _this;
+  _this setDir 134.33461;
+  _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;  ";
+  _this setUnitAbility 0.60000002;
+_this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;};
 processInitCommands;
 
