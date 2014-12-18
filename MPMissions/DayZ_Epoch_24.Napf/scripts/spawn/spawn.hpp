@@ -1,294 +1,214 @@
-class E_Spawn_Dialog
+class spawn_dialog
 {
 	idd = -1;
 	movingenable = true;
 	enableSimulation = true;
 	class Controls
 	{
-		class MapCherno: RscPicture
+		class mapNapf: RscPicture
 		{
 			idc = 1200;
 			text = "scripts\spawn\map.paa";
-			x = 0.340983 * safezoneW + safezoneX;
-			y = 0.23125 * safezoneH + safezoneY;
-			w = 0.30876 * safezoneW;
-			h = 0.531375 * safezoneH;
+			x = 0.35544 * safezoneW + safezoneX;
+			y = 0.268125 * safezoneH + safezoneY;
+			w = 0.279458 * safezoneW;
+			h = 0.468875 * safezoneH;
 		};
-		class BtnBalo: E_RscButton
+		class btnAir: e_RscButton
 		{
 			idc = 1600;
-			text = "Balota";
-			x = 0.42 * safezoneW + safezoneX;
-			y = 0.706482 * safezoneH + safezoneY;
-			w = 0.035 * safezoneW;
-			h = 0.0161 * safezoneH;
+			text = "Airstrip";
+			x = 0.597265 * safezoneW + safezoneX;
+			y = 0.726875 * safezoneH + safezoneY;
+			w = 0.0431419 * safezoneW;
+			h = 0.0145 * safezoneH;
 			action = "spawnSelect = 0;";
 		};
-		class BtnBere: E_RscButton
+		class btnBube: e_RscButton
 		{
 			idc = 1601;
-			text = "Berezino";
-			x = 0.566146 * safezoneW + safezoneX;
-			y = 0.411111 * safezoneH + safezoneY;
-			w = 0.048 * safezoneW;
+			text = "Bubendorf";
+			x = 0.40358 * safezoneW + safezoneX;
+			y = 0.358125 * safezoneH + safezoneY;
+			w = 0.058 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 1;";
 		};
-		class BtnCher: E_RscButton
+		class btnBuck: e_RscButton
 		{
 			idc = 1602;
-			text = "Cherno";
-			x = 0.466146 * safezoneW + safezoneX;
-			y = 0.7 * safezoneH + safezoneY;
-			w = 0.038 * safezoneW;
+			text = "Buckten";
+			x = 0.40358 * safezoneW + safezoneX;
+			y = 0.62 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 2;";
 		};
-		class BtnDevi: E_RscButton
+		class btnGisw: e_RscButton
 		{
 			idc = 1603;
-			text = "Devils";
-			x = 0.46 * safezoneW + safezoneX;
-			y = 0.33 * safezoneH + safezoneY;
-			w = 0.035 * safezoneW;
+			text = "Giswil";
+			x = 0.56 * safezoneW + safezoneX;
+			y = 0.64625 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 3;";
 		};
-		class BtnElek: E_RscButton
+		class btnHorw: e_RscButton
 		{
 			idc = 1604;
-			text = "Elektro";
-			x = 0.526041 * safezoneW + safezoneX;
-			y = 0.71 * safezoneH + safezoneY;
-			w = 0.04 * safezoneW;
+			text = "Horw";
+			x = 0.561805 * safezoneW + safezoneX;
+			y = 0.403125 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 4;";
 		};
-		class BtnGork: E_RscButton
+		class btnHube: e_RscButton
 		{
 			idc = 1605;
-			text = "Gorka";
-			x = 0.517708 * safezoneW + safezoneX;
-			y = 0.425926 * safezoneH + safezoneY;
-			w = 0.0323959 * safezoneW;
-			h = 0.0161 * safezoneH;
+			text = "Hubel";
+			x = 0.343423 * safezoneW + safezoneX;
+			y = 0.461875 * safezoneH + safezoneY;
+			w = 0.043142 * safezoneW;
+			h = 0.0145 * safezoneH;
 			action = "spawnSelect = 5;";
 		};
-		class BtnGris: E_RscButton
+		class btnLaus: e_RscButton
 		{
 			idc = 1606;
-			text = "Grishino";
-			x = 0.44 * safezoneW + safezoneX;
-			y = 0.38 * safezoneH + safezoneY;
-			w = 0.041 * safezoneW;
+			text = "Lausen";
+			x = 0.496875 * safezoneW + safezoneX;
+			y = 0.358125 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 6;";
 		};
-		class BtnGugl: E_RscButton
+		class btnLenz: e_RscButton
 		{
 			idc = 1607;
-			text = "Guglovo";
-			x = 0.485 * safezoneW + safezoneX;
-			y = 0.53 * safezoneH + safezoneY;
-			w = 0.042 * safezoneW;
+			text = "Lenzburg";
+			x = 0.45 * safezoneW + safezoneX;
+			y = 0.32 * safezoneH + safezoneY;
+			w = 0.058 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 7;";
 		};
-		class BtnGvoz: E_RscButton
+		class btnLuze: e_RscButton
 		{
 			idc = 1608;
-			text = "Gvozdno";
-			x = 0.498959 * safezoneW + safezoneX;
-			y = 0.30463 * safezoneH + safezoneY;
-			w = 0.044 * safezoneW;
+			text = "Luzern";
+			x = 0.53 * safezoneW + safezoneX;
+			y = 0.38 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 8;";
 		};
-		class BtnKaba: E_RscButton
+		class btnMutt: e_RscButton
 		{
 			idc = 1609;
-			text = "Kabanino";
-			x = 0.43 * safezoneW + safezoneX;
-			y = 0.46 * safezoneH + safezoneY;
-			w = 0.048 * safezoneW;
+			text = "Muttenz";
+			x = 0.42 * safezoneW + safezoneX;
+			y = 0.49125 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 9;";
 		};
-		class BtnKame: E_RscButton
+		class btnRomo: e_RscButton
 		{
 			idc = 1610;
-			text = "Kamenka";
-			x = 0.35 * safezoneW + safezoneX;
-			y = 0.706482 * safezoneH + safezoneY;
-			w = 0.048 * safezoneW;
+			text = "Romoos";
+			x = 0.53 * safezoneW + safezoneX;
+			y = 0.4425 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 10;";
 		};
-		class BtnKamy: E_RscButton
+		class btnSach: e_RscButton
 		{
 			idc = 1611;
-			text = "Kamyshovo";
-			x = 0.557812 * safezoneW + safezoneX;
-			y = 0.666667 * safezoneH + safezoneY;
-			w = 0.058 * safezoneW;
+			text = "Sachseln";
+			x = 0.561805 * safezoneW + safezoneX;
+			y = 0.483125 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 11;";
 		};
-		class BtnKoma: E_RscButton
+		class btnScha: e_RscButton
 		{
 			idc = 1612;
-			text = "Komarovo";
-			x = 0.384 * safezoneW + safezoneX;
-			y = 0.735 * safezoneH + safezoneY;
-			w = 0.052 * safezoneW;
+			text = "Schangen";
+			x = 0.463432 * safezoneW + safezoneX;
+			y = 0.6325 * safezoneH + safezoneY;
+			w = 0.054 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 12;";
 		};
-		class BtnKras: E_RscButton
+		class btnSiss: e_RscButton
 		{
 			idc = 1613;
-			text = "Krasnostav";
-			x = 0.55 * safezoneW + safezoneX;
-			y = 0.29 * safezoneH + safezoneY;
-			w = 0.06 * safezoneW;
-			h = 0.0161 * safezoneH;
+			text = "Sissach";
+			x = 0.479935 * safezoneW + safezoneX;
+			y = 0.408125 * safezoneH + safezoneY;
+			w = 0.0424397 * safezoneW;
+			h = 0.0145 * safezoneH;
 			action = "spawnSelect = 13;";
 		};
-		class BtnKrut: E_RscButton
+		class btnWald: e_RscButton
 		{
 			idc = 1614;
-			text = "Krutoy";
-			x = 0.583333 * safezoneW + safezoneX;
-			y = 0.623149 * safezoneH + safezoneY;
-			w = 0.036 * safezoneW;
+			text = "Waldegg";
+			x = 0.441162 * safezoneW + safezoneX;
+			y = 0.73 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 14;";
 		};
-		class BtnLopa: E_RscButton
+		class btnWorb: e_RscButton
 		{
 			idc = 1615;
-			text = "Lopatino";
-			x = 0.36 * safezoneW + safezoneX;
-			y = 0.39 * safezoneH + safezoneY;
+			text = "Worb";
+			x = 0.37 * safezoneW + safezoneX;
+			y = 0.57375 * safezoneH + safezoneY;
 			w = 0.046 * safezoneW;
 			h = 0.0161 * safezoneH;
 			action = "spawnSelect = 15;";
 		};
-		class BtnPetr: E_RscButton
+		class btnDono: e_RscButton
 		{
 			idc = 1616;
-			text = "Petrovka";
-			x = 0.432812 * safezoneW + safezoneX;
-			y = 0.291667 * safezoneH + safezoneY;
-			w = 0.046 * safezoneW;
-			h = 0.0161 * safezoneH;
-			action = "spawnSelect = 16;";
-		};
-		class BtnPogo: E_RscButton
-		{
-			idc = 1617;
-			text = "Pogorevka";
-			x = 0.4 * safezoneW + safezoneX;
-			y = 0.52 * safezoneH + safezoneY;
-			w = 0.054 * safezoneW;
-			h = 0.0161 * safezoneH;
-			action = "spawnSelect = 17;";
-		};
-		class BtnPrig: E_RscButton
-		{
-			idc = 1618;
-			text = "Prigor";
-			x = 0.48 * safezoneW + safezoneX;
-			y = 0.67 * safezoneH + safezoneY;
-			w = 0.036 * safezoneW;
-			h = 0.0161 * safezoneH;
-			action = "spawnSelect = 18;";
-		};
-		class BtnPust: E_RscButton
-		{
-			idc = 1619;
-			text = "Pusta";
-			x = 0.51 * safezoneW + safezoneX;
-			y = 0.64 * safezoneH + safezoneY;
-			w = 0.034 * safezoneW;
-			h = 0.0161 * safezoneH;
-			action = "spawnSelect = 19;";
-		};			
-		class BtnSoln: E_RscButton
-		{
-			idc = 1620;
-			text = "Solnichny";
-			x = 0.580729 * safezoneW + safezoneX;
-			y = 0.540741 * safezoneH + safezoneY;
-			w = 0.05 * safezoneW;
-			h = 0.0161 * safezoneH;
-			action = "spawnSelect = 20;";
-		};
-		class BtnVybo: E_RscButton
-		{
-			idc = 1621;
-			text = "Vybor";
-			x = 0.397812 * safezoneW + safezoneX;
-			y = 0.431482 * safezoneH + safezoneY;
-			w = 0.03 * safezoneW;
-			h = 0.0161 * safezoneH;
-			action = "spawnSelect = 21;";
-		};
-		class BtnVysh: E_RscButton
-		{
-			idc = 1622;
-			text = "Vyshnoye";
-			x = 0.457291 * safezoneW + safezoneX;
-			y = 0.56 * safezoneH + safezoneY;
-			w = 0.05 * safezoneW;
-			h = 0.0161 * safezoneH;
-			action = "spawnSelect = 22;";
-		};
-		class BtnZele: E_RscButton
-		{
-			idc = 1623;
-			text = "Zelenogorsk";
-			x = 0.379688 * safezoneW + safezoneX;
-			y = 0.597222 * safezoneH + safezoneY;
-			w = 0.064 * safezoneW;
-			h = 0.0161 * safezoneH;
-			action = "spawnSelect = 23;";
-		};
-		class BtnDono: E_RscButton
-		{
-			idc = 1624;
 			text = "Base";
-			x = 0.555 * safezoneW + safezoneX;
-			y = 0.255 * safezoneH + safezoneY;
+			x = 0.6 * safezoneW + safezoneX;
+			y = 0.241 * safezoneH + safezoneY;
 			w = 0.0422917 * safezoneW;
 			h = 0.0188889 * safezoneH;
 			action = "spawnSelect = 40;";
 		};
-		class BtnRand: E_RscButton
+		class btnRand: e_RscButton
 		{
 			idc = 1625;
 			text = "Random";
 			x = 0.6 * safezoneW + safezoneX;
-			y = 0.230556 * safezoneH + safezoneY;
+			y = 0.216 * safezoneH + safezoneY;
 			w = 0.0422917 * safezoneW;
 			h = 0.0188889 * safezoneH;
 			action = "spawnSelect = 41;";
 		};
-		class LblMap: RscText
+		class lblMap: RscText
 		{
 			idc = 1000;
 			text = "Select spawn point or click here to spawn randomly:";
 			x = 0.350521 * safezoneW + safezoneX;
-			y = 0.225001 * safezoneH + safezoneY;
+			y = 0.215 * safezoneH + safezoneY;
 			w = 0.239687 * safezoneW;
 			h = 0.0290741 * safezoneH;
 		};
-		class LblMap2: RscText
+		class lblMap2: RscText
 		{
 			idc = 1001;
 			text = "Click here to spawn at your base:";
-			x = 0.350521 * safezoneW + safezoneX;
-			y = 0.25 * safezoneH + safezoneY;
+			x = 0.43 * safezoneW + safezoneX;
+			y = 0.24 * safezoneH + safezoneY;
 			w = 0.239687 * safezoneW;
 			h = 0.0290741 * safezoneH;
 		};
