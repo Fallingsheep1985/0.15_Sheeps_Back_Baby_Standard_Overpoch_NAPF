@@ -170,9 +170,11 @@ if (!isDedicated) then {
 	
 
 	
-	if ( !((getPlayerUID player) in AdminList) && !((getPlayerUID player) in ModList)) then {
-		  [] execVM "admintools\antihack\antihack.sqf"; // Epoch Antihack with bypass
-	};
+if (((getPlayerUID player) in AdminList)||((getPlayerUID player) in ModList))then{
+//dont load the antihack so admin tools work properly
+}else{
+     [] execVM "admintools\antihack\antihack.sqf"; // Epoch Antihack with bypass
+    };
 	//Lights
 	if (LightScript) then{
 		[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
