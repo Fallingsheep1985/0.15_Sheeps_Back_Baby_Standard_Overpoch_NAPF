@@ -1,6 +1,6 @@
 private [_bankLoc];
 
-_meters = player distance [7014.4897, 7645.3999, 1.6962879];
+_meters = player distance [6258.8682, 10038.864, 1.6962879];
 
 if(_debugBank == 1) then {
 	systemChat "[DEBUG] Bank Zonecheck successfully executed.";

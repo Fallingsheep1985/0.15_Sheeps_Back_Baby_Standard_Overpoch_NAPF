@@ -109,16 +109,12 @@ if (_random <= 3) then {
 				cutText [format["Bank robbery failed.."], "PLAIN DOWN"];
 				systemChat "Bank robbery failed!";
 			};
-sleep 600; //10min
+sleep 300; //10min
 script_in_progress = false; 
 
 
-// Bank Marker
-_marker = createMarker ["_bank", [7018.75, 7655.4258]];
-_marker setMarkerText "Central Bank of Novy Sobor"; 
-_marker setMarkerType "mil_dot";
-_marker setMarkerColor "ColorOrange";
-_bank = _marker ;
+
+
 /* Remove the // to enable the script to able to be used again. 
 By "sleep seconds:" i.e: sleep 60; (able to use script after 60 seconds again).
 */
