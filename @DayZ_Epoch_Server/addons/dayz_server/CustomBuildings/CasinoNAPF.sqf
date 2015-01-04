@@ -1,4 +1,4 @@
-NAPF Casino By Geekin aka Chainsaw Squirrel designed and made for Sheeps RePack .15 NAPF
+//NAPF Casino By Geekin aka Chainsaw Squirrel designed and made for Sheeps RePack .15 NAPF
 
 
 if (isServer) then {

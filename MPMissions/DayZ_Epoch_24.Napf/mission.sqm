@@ -1198,7 +1198,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=25;
+		items=27;
 		class Item0
 		{
 			position[]={10010.905,110.96082,10448.559};
@@ -1373,11 +1373,27 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
+		class Item25
+        {
+            position[]={6259.7646,19.9, 10045.91};
+            name="BSRBANK";
+            text="Central Bank";
+            type="mil_circle";
+            colorName="ColorRed";
+        };
+        class Item26
+        {
+            position[]={11175.731,19.9, 18334.029};
+            name="Casino";
+            text="Napf Casino";
+            type="mil_circle";
+            colorName="ColorRed";
+        };
 
 	};
 	class Sensors
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			position[]={8246.3184,15.544708,15485.867};
@@ -1547,6 +1563,21 @@ class Mission
 			{
 			};
 		};
+		class Item11
+        {
+            position[]={11175.731,19.9, 18334.029};
+            activationBy="WEST";
+            repeating=1;
+            interruptable=1;
+            age="UNKNOWN";
+            name="Casino";
+            expCond="(player distance Casino ) < 40;";
+            expActiv="[""Napf Casino"",true,""enter""] spawn player_traderCity;";
+            expDesactiv="[""Napf Casino"",true,""leave""] spawn player_traderCity;";
+            class Effects
+            {
+            };
+        };
 		
 	};
 };
