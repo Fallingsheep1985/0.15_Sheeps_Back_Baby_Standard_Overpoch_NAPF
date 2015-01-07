@@ -72,11 +72,11 @@ _vehicle_187 = objNull;
 if (true) then
 {
   //_this = createVehicle ["MAP_Barels2", [9941.6992, 1642.0028 9944.9209, 1638.3419, 5.2215633], [], 0, "CAN_COLLIDE"];// Cherno
-  _this = createVehicle ["MAP_Barels2", [91700.35,2230.79, 5.2215633], [], 0, "CAN_COLLIDE"];// Napf
+  _this = createVehicle ["MAP_Barels2", [9170.35,2230.79, 5.2215633], [], 0, "CAN_COLLIDE"];// Napf
   _vehicle_187 = _this;
   _this setDir 76.288574;
   //_this setPos [9944.9209, 1638.3419, 5.2215633];// Cherno
-  this setPos [91700.35,2230.79, 5.2215633];// Napf
+  _this setPos [9170.35,2230.79, 5.2215633];// Napf
 };
 
 _vehicle_193 = objNull;
