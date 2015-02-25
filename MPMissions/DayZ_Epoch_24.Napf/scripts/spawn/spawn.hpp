@@ -1,4 +1,4 @@
-class spawn_dialog
+class e_spawn_dialog
 {
 	idd = -1;
 	movingenable = true;
